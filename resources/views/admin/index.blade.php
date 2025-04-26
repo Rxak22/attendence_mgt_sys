@@ -9,7 +9,7 @@
 <div class="col-sm-6 text-left" >
      <h4 class="page-title">Dashboard</h4>
      <ol class="breadcrumb">
-         <li class="breadcrumb-item active">Welcome to Simple Attendance Management System</li>
+         <li class="breadcrumb-item active">Welcome to Attendance Management System</li>
      </ol>
 </div>
 @endsection
@@ -17,7 +17,7 @@
 @section('content')
                    <div class="row">
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-secondary text-white">
+                                <div class="card text-white" style="background:#4F1C51">
                                     <div class="card-body">
                                         <div class="mb-4">
                                             <div class="float-left mini-stat-img mr-4">
@@ -39,7 +39,7 @@
                             </div>
 
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-secondary text-white">
+                                <div class="card text-white" style="background:#4F1C51">
                                     <div class="card-body">
                                         <div class="mb-4">
                                             <div class="float-left mini-stat-img mr-4">
@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-secondary text-white">
+                                <div class="card text-white" style="background:#4F1C51">
                                     <div class="card-body">
                                         <div class="mb-4">
                                             <div class="float-left mini-stat-img mr-4">
@@ -87,7 +87,7 @@
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-secondary text-white">
+                                <div class="card text-white" style="background:#4F1C51">
                                     <div class="card-body">
                                         <div class="mb-4">
                                             <div class="float-left mini-stat-img mr-4">
@@ -117,7 +117,7 @@
                         <!-- new row -->
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
-                                <div class="card bg-secondary text-white">
+                                <div class="card text-white" style="background:#4F1C51">
                                     <div class="card-body">
                                         <div class="mb-4">
                                             <div class="float-left mini-stat-img mr-4">
