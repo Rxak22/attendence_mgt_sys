@@ -1,7 +1,6 @@
 <?php
 
-
-
+use App\Http\Controllers\Auth\RegisterController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FingerDevicesControlller;
 use App\Jobs\ClearAttendanceJob;
@@ -12,6 +11,7 @@ Route::get('/', function () {
 Route::get('attended/{user_id}', '\App\Http\Controllers\AttendanceController@attended' )->name('attended');
 Route::get('attended-before/{user_id}', '\App\Http\Controllers\AttendanceController@attendedBefore' )->name('attendedBefore');
 Auth::routes(['register' => false, 'reset' => false]);
+Route::get("/regitser", [RegisterController::class, 'index']);
 
 Route::group(['middleware' => ['auth', 'Role'], 'roles' => ['admin']], function () {
     Route::resource('/employees', '\App\Http\Controllers\EmployeeController');
@@ -45,16 +45,6 @@ Route::group(['middleware' => ['auth', 'Role'], 'roles' => ['admin']], function 
 
         return back();
     })->name('finger_device.clear.attendance');
-    
-
-});
-
-Route::group(['middleware' => ['auth']], function () {
-
-    // Route::get('/home', 'HomeController@index')->name('home');
-
-
-
     
 
 });

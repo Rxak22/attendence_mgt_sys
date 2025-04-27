@@ -3712,6 +3712,11 @@ Invoice
   border-bottom: 2px solid #02a499;
 }
 
+.wrapper-page .logo-admin > img {
+  max-width: 100%;
+  height: auto;
+}
+
 .account-card .account-card-content {
   padding: 40px;
 }
