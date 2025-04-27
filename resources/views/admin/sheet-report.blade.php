@@ -5,9 +5,9 @@
         <div class="card-header bg-success text-white">
             Attendance Sheet Report
         </div>
-        <div class="card-body">
+        <div class="card-body" style="background: #4F1C51">
             <div class="table-responsive">
-                <table class="table table-md table-hover" id="printTable">
+                <table class="table table-md table-hover text-white" id="printTable">
                 <thead class="thead-dark">
                         <tr >
 
@@ -25,25 +25,14 @@
                                 
                             @endphp
                             @foreach ($dates as $date)
-                            <th style="">
-                            
-                                
+                                <th style="">
                                     {{ $date }}
-                            
-                        </th>
-                      
-
+                                </th>
                             @endforeach
-
                         </tr>
                     </thead>
 
                     <tbody>
-
-
-
-
-
                         @foreach ($employees as $employee)
 
                             <input type="hidden" name="emp_id" value="{{ $employee->id }}">
@@ -52,18 +41,9 @@
                                 <td>{{ $employee->name }}</td>
                                 <td>{{ $employee->position }}</td>
                                 <!-- <td>{{ $employee->id }}</td> -->
-								<!-- Log on to codeastro.com for more projects! -->
-
-
-
-
-
-
                                 @for ($i = 1; $i < $today->daysInMonth + 1; ++$i)
 
-
-                                    @php
-                                        
+                                    @php 
                                         $date_picker = \Carbon\Carbon::createFromDate($today->year, $today->month, $i)->format('Y-m-d');
                                         
                                         $check_attd = \App\Models\Attendance::query()
@@ -104,8 +84,6 @@
                                        @else
                                        <i class="fas fa-times text-danger"></i>
                                        @endif
-                                        
-
                                         </div>
 
                                     </td>
@@ -113,15 +91,7 @@
                                 @endfor
                             </tr>
                         @endforeach
-
-
-
-
-
                     </tbody>
-					<!-- Log on to codeastro.com for more projects! -->
-
-
                 </table>
             </div>
         </div>

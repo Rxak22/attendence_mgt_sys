@@ -7,9 +7,9 @@
 
 @section('breadcrumb')
 <div class="col-sm-6 text-left" >
-     <h4 class="page-title">Dashboard</h4>
+     <h4 class="page-title text-light">Dashboard</h4>
      <ol class="breadcrumb">
-         <li class="breadcrumb-item active">Welcome to Attendance Management System</li>
+         <li class="breadcrumb-item active text-secondary">Welcome to Attendance Management System</li>
      </ol>
 </div>
 @endsection

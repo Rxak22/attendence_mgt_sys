@@ -9,7 +9,7 @@
         <meta content="Themesbrand" name="author" />
         @include('layouts.head')
     </head>
-<body>
+<body style="background:#210F37">
     <div id="wrapper">
          @include('layouts.header')
          @include('layouts.sidebar')

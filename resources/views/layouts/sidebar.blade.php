@@ -48,30 +48,29 @@
                                     <i class="ti-calendar"></i> <span> Attendance Logs </span>
                                 </a>
                             </li>
-                            <!-- <li class="">
+                             {{-- <li class="">
                                 <a href="/latetime" class="waves-effect {{ request()->is("latetime") || request()->is("latetime/*") ? "mm active" : "" }}">
                                     <i class="dripicons-warning"></i><span> Late Time </span>
                                 </a>
-                            </li> -->
-                            <!-- <li class="">
+                            </li> 
+                             <li class="">
                                 <a href="/leave" class="waves-effect {{ request()->is("leave") || request()->is("leave/*") ? "mm active" : "" }}">
                                     <i class="dripicons-backspace"></i> <span> Leave </span>
                                 </a>
-                            </li> -->
-                            <!-- <li class="">
+                            </li> 
+                            <<li class="">
                                 <a href="/overtime" class="waves-effect {{ request()->is("overtime") || request()->is("overtime/*") ? "mm active" : "" }}">
                                     <i class="dripicons-alarm"></i> <span> Over Time </span>
                                 </a>
-                            </li> -->
-                            <li class="menu-title">Tools</li>
+                            </li>  --}}
+                            {{-- <li class="menu-title">Tools</li>
                             <li class="">
                                 <a href="{{ route("finger_device.index") }}" class="waves-effect {{ request()->is("finger_device") || request()->is("finger_device/*") ? "mm active" : "" }}">
                                     <i class="fas fa-fingerprint"></i> <span> Biometric Device </span>
                                 </a>
-                            </li>
+                            </li> --}}
 
                         </ul>
-						<!-- Log on to codeastro.com for more projects! -->
                     </div>
                     <!-- Sidebar -->
                     <div class="clearfix"></div>
